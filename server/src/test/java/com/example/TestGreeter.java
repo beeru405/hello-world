@@ -29,8 +29,12 @@ public class TestGreeter {
     greeter = new Greeter();
 
     // Set the path to your ChromeDriver executable
-    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-
+    System.setProperty("webdriver.chrome.driver", "/home/devops/usr/bin/chromedriver");
+    
+    // Use headless mode for Chrome
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
+    
     // Create a new instance of the Chrome driver
     driver = new ChromeDriver();
   }
