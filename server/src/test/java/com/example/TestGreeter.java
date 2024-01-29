@@ -1,19 +1,13 @@
 package com.example;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
-//import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.greaterThan;
-//import static org.junit.Assert.assertThat;
-//import static org.junit.matchers.JUnitMatchers.containsString;
-
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.Assert.assertTrue;
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,14 +32,12 @@ public class TestGreeter {
   @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
     String someone = "World";
-
     assertThat(greeter.greet(someone), containsString(someone));
   }
 
   @Test
   public void greetShouldIncludeGreetingPhrase() {
     String someone = "World";
-
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
 
@@ -77,8 +69,7 @@ public class TestGreeter {
     assertTrue("Registration was unsuccessful", thankYouMessage.isDisplayed());
   }
 
-  // Add a teardown method to close the browser window
-  // (You might want to use @After annotation if using JUnit 4)
+  @After
   public void tearDown() {
     if (driver != null) {
       driver.quit();
