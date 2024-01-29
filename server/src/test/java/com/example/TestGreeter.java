@@ -33,7 +33,7 @@ public class TestGreeter {
     @Test
     public void testRegistrationForm() {
         // Navigate to the website with the form
-        driver.get("your_website_url_here");
+        driver.get("http://192.168.138.130:8090/webapp/");
 
         // Locate the form elements by their IDs
         WebElement nameInput = driver.findElement(By.id("Name"));
