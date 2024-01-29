@@ -16,8 +16,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class RegistrationFormTest {
-
+//public class RegistrationFormTest {
+public class TestGreeter {
+    
     private WebDriver driver;
 
     @Before
