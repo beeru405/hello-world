@@ -23,7 +23,7 @@ public class TestGreeter {
     greeter = new Greeter();
 
     // Set the path to your ChromeDriver executable
-    System.setProperty("webdriver.chrome.driver", "/home/devops/Music/chromedriver_linux64/chromedriver");  
+    System.setProperty("webdriver.chrome.driver", "/home/devops/Downloads/chromedriver");  
     // Set the path to your Chrome binary (adjust the path accordingly)
     System.setProperty("webdriver.chrome.bin", "/usr/bin/google-chrome");
     
