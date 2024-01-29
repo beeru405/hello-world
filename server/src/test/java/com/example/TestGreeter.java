@@ -24,9 +24,13 @@ public class TestGreeter {
 
     // Set the path to your ChromeDriver executable
     System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless");
+    WebDriver driver = new ChromeDriver(options);
+
     
     // Create a new instance of the Chrome driver
-    driver = new ChromeDriver();
+    //driver = new ChromeDriver();
   }
 
   @Test
