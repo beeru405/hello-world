@@ -29,7 +29,7 @@ public class TestGreeter {
     greeter = new Greeter();
 
     // Set the path to your ChromeDriver executable
-    System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
     // Create a new instance of the Chrome driver
     driver = new ChromeDriver();
