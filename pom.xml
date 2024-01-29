@@ -210,7 +210,13 @@
         <version>1.8.5</version>
         <scope>test</scope>
       </dependency>
-    </dependencies>
+      <!-- Selenium WebDriver -->
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version> <!-- Use the latest version available -->
+        <scope>test</scope>
+      </dependencies>
   </dependencyManagement>
 
   <scm>
