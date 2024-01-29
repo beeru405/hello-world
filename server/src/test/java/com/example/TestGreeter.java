@@ -24,6 +24,8 @@ public class TestGreeter {
 
     // Set the path to your ChromeDriver executable
     System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");  
+    // Set the path to your Chrome binary (adjust the path accordingly)
+    System.setProperty("webdriver.chrome.bin", "/usr/bin/google-chrome");
     
     // Create a new instance of the Chrome driver
     driver = new ChromeDriver();
