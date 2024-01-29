@@ -74,7 +74,7 @@ public class TestGreeter {
 
     // Wait for the "Thankyou, Happy Learning" message to be visible
     WebElement thankYouMessage = driver.findElement(By.xpath("//h1[text()='Thankyou, Happy Learning']"));
-    Assert.assertTrue("Registration was unsuccessful", thankYouMessage.isDisplayed());
+    assertTrue("Registration was unsuccessful", thankYouMessage.isDisplayed());
   }
 
   // Add a teardown method to close the browser window
